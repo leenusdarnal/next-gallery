@@ -16,6 +16,8 @@ const mockImages = mockURLs.map((url, index) => ({
   url,
 }));
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const posts = await db.query.posts.findMany();
   console.log(posts);
